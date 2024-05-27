@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cartelera</title>
+
+<style>
+    .gridcontainer{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "section"
+    "footer";
+}
+
+@media(max-width:768px){
+    .gridcontainer > header{
+        grid-area: header;
+    }
+    .gridcontainer > section{
+        grid-area: section;
+    }
+
+
+}
+</style>
+    
+</head>
+
+<body class="gridcontainer">
+    
+    <header>
+        <div class="encabezado">
+            <img src="src/cine.png" alt="logo del cine" width="100px" height="100px">
+            <h1>CINECULTO: LAS PELÍCULAS DE CULTO FAVORITAS DE INGRID</h1>
+        </div>
+        <nav>
+            <button class="botones"><a href="index.html">Inicio</a></button>
+            <button class="botones"><a href="cartelera.html">Cartelera</a></button>
+            <button class="botones"><a href="dulceria.html">Dulceria</a></button>
+        </nav>
+    </header>
+
+    <section class="section">
+    <div class="division">
+        <img src="movieimgs/heathers.jpg" alt="Heathers" width="200px" height="350px">
+        <div class="movieinfo">
+                <h3>Heathers</h3>
+                <h5>Dir. Michael Lehmann | 1989</h5>
+            <p>Sala 1</p>
+            <strong>Boletos $60</strong>
+            <button class="boton"><a href="">Comprar boletos</a></button>
+        </div>
+    </div>
+    <div class="division">
+        <img src="movieimgs/killbill.jpg" alt="KillBill" width="200px" height="350px">
+        <div class="movieinfo">
+            <h3>Kill Bill</h3>
+            <h5>Quentin Tarantino | 2003</h5>
+            <p>Sala 2</p>
+            <strong>Boletos $60</strong>
+            <button class="boton"><a href="">Comprar boletos</a></button>
+        </div>
+    </div>
+    <div class="division">
+        <img src="movieimgs/thewall.jpg" alt="TheWall">
+        <div class="movieinfo">
+            <h3>Pink Floyd: The Wall</h3>
+            <h5>Dir. Alan Parker | 1982</h5>
+            <p>Sala 3</p>
+            <strong>Boletos $60</strong>
+            <button class="boton"><a href="">Comprar boletos</a></button>
+        </div>
+    </div>
+    <div class="division">
+        <img src="movieimgs/fightclub.jpg" alt="Fight Club">
+        <div class="movieinfo">
+            <h3>Fight Club</h3>
+            <h5>Dir. David Fincher | 1999</h5>
+            <p>Sala 4</p>
+            <strong>Boletos $60</strong>
+            <button class="boton"><a href="">Comprar boletos</a></button>
+        </div>
+    </div>
+    <div class="division">
+        <img src="movieimgs/naranjamecanica.jpg" alt="Naranja Mecánica">
+        <div class="movieinfo">
+            <h3>La Naranja Mecánica</h3>
+            <h5>Dir. Stanley Kubrick | 1972</h5>
+            <p>Sala 4</p>
+            <strong>Boletos $60</strong>
+            <button class="boton"><a href="">Comprar boletos</a></button>
+        </div>
+    </div>
+    <div class="division">
+        <img src="movieimgs/rockyhorror.jpg" alt="Rocky Horror">
+        <div class="movieinfo">
+            <h3>The Rocky Horror Picture Show</h3>
+            <h5>Dir. Jim Sharman | 1975</h5>
+            <p>Sala 4</p>
+            <strong>Boletos $60</strong>
+            <button class="boton"><a href="">Comprar boletos</a></button>
+        </div>
+    </div>
+    <div class="division">
+        <img src="movieimgs/pulpfiction.jpg" alt="Pulp Fiction">
+        <div class="movieinfo">
+            <h3>Pulp Fiction</h3>
+            <h5>Dir. Quentin Tarantino | 1994</h5>
+            <p>Sala 4</p>
+            <strong>Boletos $60</strong>
+            <button class="boton"><a href="">Comprar boletos</a></button>
+        </div>
+    </div>
+    <div class="division">
+        <img src="movieimgs/princessbride.jpg" alt="Princess Bride">
+        <div class="movieinfo">
+            <h3>The Princess Bride</h3>
+            <h5>Dir. Rob Reiner | 1987</h5>
+            <p>Sala 4</p>
+            <strong>Boletos $60</strong>
+            <button class="boton"><a href="">Comprar boletos</a></button>
+        </div>
+    </div>
+    <div class="division">
+        <img src="movieimgs/breakfastclub.jpg" alt="Breakfast Club">
+        <div class="movieinfo">
+            <h3>The Breakfast Club</h3>
+            <h5>Dir. John Hughes | 1985</h5>
+            <p>Sala 4</p>
+            <strong>Boletos $60</strong>
+            <button class="boton"><a href="">Comprar boletos</a></button>
+        </div>
+    </div>
+    <div class="division">
+        <img src="movieimgs/thegodfather.jpg" alt="The Godfather">
+        <div class="movieinfo">
+            <h3>The Godfather</h3>
+            <h5>Dir. Francis Ford Coppola | 1972</h5>
+            <p>Sala 4</p>
+            <strong>Boletos $60</strong>
+            <button class="boton"><a href="">Comprar boletos</a></button>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <h4>CINE CULTO (2024)</h4>
+        <p>Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>

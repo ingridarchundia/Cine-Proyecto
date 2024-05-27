@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dulceria</title>
+
+<style>
+    .gridcontainer{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "section"
+    "main"
+    "footer";
+}
+
+@media(max-width:768px){
+    .gridcontainer > header{
+        grid-area: header;
+        width: 100%;
+    }
+    .gridcontainer > section{
+        grid-area: section;
+        width: auto;
+    }
+
+
+}
+</style>
+
+</head>
+<body>
+
+    <header>
+        <div class="encabezado">
+            <img src="src/cine.png" alt="logo del cine" width="100px" height="100px">
+            <h1>CINECULTO: LAS PELÍCULAS DE CULTO FAVORITAS DE INGRID</h1>
+        </div>
+        <nav>
+            <button class="botones"><a href="index.html">Inicio</a></button>
+            <button class="botones"><a href="cartelera.html">Cartelera</a></button>
+            <button class="botones"><a href="dulceria.html">Dulceria</a></button>
+        </nav>
+    </header>
+
+<!--<div class="dulceriamain">-->  
+<section class="aside">   
+<div class="content-box">
+    <h2>Ordena aquí lo que quieras comer y beber</h2>
+</div>
+<br>
+<div class="border-box">
+    <p>¡Puedes dejar tu pedido hecho y solicitar que cuando este listo te lo lleven a tu sala y asiento!</p>
+</div>
+</section>
+
+    <main class="sectionfood" >
+        <div class="food">
+            <img src="src/popcorn.png" alt="palomitas" width="200px" height="200px">
+            <div class="foodinfo">
+                <h2>Palomitas</h2>
+                <p>$30</p>
+                <button class="boton"><a href="">Comprar</a></button>
+            </div>
+        </div>
+        <div class="food">
+            <img src="src/chocolate.png"  alt="chocolate" width="200px" height="200px">
+            <div class="foodinfo">
+            <h2>Chocolate</h2>
+            <p>$20</p>
+            <button class="boton"><a href="">Comprar</a></button>
+            </div>
+        </div>
+        <div class="food">
+            <img src="src/candy.png"  alt="dulces" width="200px" height="200px">
+            <div class="foodinfo">
+            <h2>Dulces</h2>
+            <p>$15</p>
+            <button class="boton"><a href="">Comprar</a></button>
+            </div>
+        </div>
+        <div class="food">
+            <img src="src/soda.png"  alt="soda" width="200px" height="200px">
+            <div class="foodinfo">
+            <h2>Refrescos</h2>
+            <p>$25</p>
+            <button class="boton"><a href="">Comprar</a></button>
+        </div>
+        </div>
+        <div class="food">
+            <img src="src/icee.png"  alt="icee" width="200px" height="200px">
+            <div class="foodinfo">
+            <h2>Icee</h2>
+            <p>$40</p>
+            <button class="boton"><a href="">Comprar</a></button>
+            </div>
+        </div>
+        <div class="food">
+            <img src="src/waterbottle.png"  alt="agua" width="200px" height="200px">
+            <div class="foodinfo">
+            <h2>Agua</h2>
+            <p>$20</p>
+            <button class="boton"><a href="">Comprar</a></button>
+        </div>
+        </div>
+    </main>
+<!--</div>-->
+
+    <footer>
+        <h4>CINE CULTO (2024)</h4>
+        <p>Todos los derechos reservados</p>
+    </footer>
+
+ 
+
+
+</body>
+</html>

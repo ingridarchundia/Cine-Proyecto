@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CineCulto</title>
+
+    <style>
+    .gridcontainer{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+    "header"
+    "aside"
+    "main"
+    "section"
+    "form"
+    "footer";
+}
+
+@media(max-width:768px){
+    .gridcontainer > header{
+        grid-area: header;
+    }
+    .gridcontainer > aside{
+        grid-area: aside;
+    }
+
+
+}
+    </style>
+</head>
+<body class="gridcontainer">
+
+    <header>
+        <div class="encabezado">
+            <img src="src/cine.png" alt="logo del cine" width="100px" height="100px">
+            <h1>CINECULTO: LAS PELÍCULAS DE CULTO FAVORITAS DE INGRID</h1>
+        </div>
+        <nav>
+            <button class="botones"><a href="index.html">Inicio</a></button>
+            <button class="botones"><a href="cartelera.html">Cartelera</a></button>
+            <button class="botones"><a href="dulceria.html">Dulceria</a></button>
+        </nav>
+    </header>
+
+<!--<div class="asidemain">-->
+<aside>
+    <h1>Hola, mi nombre es Ingrid!</h2>
+    <p>Y decidí abrir un cine para proyectar mis peliculas favoritas</p>
+    <div>
+        <h1>Otras cosas sobre mí</h1>
+        <ul>
+            <li>Mis colores favoritos son el verde esmeralda y el rojo</li>
+            <li>Soy acuario</li>
+            <li>Vivo en CDMX</li>
+            <li>Mi animal favorito son las serpientes</li>
+            <li>Mi cantante favorita es Taylor Swift, soy Swiftie desde 2009</li>
+        </ul>
+    </div>
+</aside>
+
+<main>
+    <div class="maindesign">
+    <div class="maininfo">
+    <h1>Funciones especiales de la semana</h1>
+    <p>Disfruta de estas películas Lun a Viernes</p>
+    <a href="cartelera.html">O revisa nuestra cartelera usual</a>
+    </div>
+<div class="especiales">
+    <div>
+        <h1>Lunes</h1>
+        <img src="movieimgs/Suspiria-1977.jpg" alt="suspiria(1987)" width="200px" height="250px">
+        <h3>SUSPIRIA (1977)</h3>
+        <h4>Dir. Argento</h4>
+        <button class="botones"><a href="#">Compra tus boletos</a></button>
+    </div>
+    <div>
+        <h1>Martes</h1>
+        <img src="movieimgs/tiffanys.jpg" alt="breakfast at tiffanys" width="200px" height="250px">
+        <h3>Breakfast at Tiffany's (1961)</h3>
+        <h4>Dir. Blake Edwards</h4>
+        <button class="botones"><a href="#">Compra tus boletos</a></button>
+    </div>
+    <div>
+        <h1>Miercoles</h1>
+        <img src="movieimgs/sabrina.jpg" alt="Sabrina" width="200px" height="250px">
+        <h3>Sabrina (1954)</h3>
+        <h4>Dir. Billy Wilder</h4>
+        <button class="botones"><a href="#">Compra tus boletos</a></button>
+    </div>
+    <div>
+        <h1>Jueves</h1>
+        <img src="movieimgs/romanholiday.jpg" alt="Roman Holiday" width="200px" height="250px">
+        <h3>Roman Holiday (1953)</h3>
+        <h4>Dir. William Wyler</h4>
+        <button class="botones"><a href="#">Compra tus boletos</a></button>
+    </div>
+    <div>
+        <h1>Viernes</h1>
+        <img src="movieimgs/goonies.jpg" alt="Goonies" width="200px" height="250px">
+        <h3>Goonies (1985)</h3>
+        <h4>Dr. Richard Donner</h4>
+        <button class="botones"><a href="#">Compra tus boletos</a></button>
+    </div>
+</div> 
+</div> 
+</main>
+<!--</div>-->
+
+<div class="pelismex">
+<h2>Próximamente...</h4>
+<h1>ESPECIAL: CINE DE TERROR MEXICANO</h1>
+<div class="container">
+    <div class="box">
+        <img src="movieimgs/vientomiedo.jpg" alt="hasta el viento tiene miedo" width="150px" height="200px">
+    </div>
+    <div class="box">
+        <img src="movieimgs/libropiedra.jpg" alt="el libro de piedra" width="150px" height="200px">
+    </div>
+    <div class="box">
+        <img src="movieimgs/becker.jpg" alt="más negro que la noche" width="150px" height="200px">
+    </div>
+    <div class="box">
+        <img src="movieimgs/llorona.jpg" alt="la llorona" width="150px" height="200px">
+    </div>
+</div>
+</div>
+
+
+<section class="formsection">
+    <form action="">
+      <div>
+        <h3>¿Quieres solicitar una película? Registrate!</h3>
+        <label for="nombre">Nombre Completo</label>
+        <input type="text" id="nombre" />
+        <br />
+        <label for="correo">Ingresa tu e-mail</label>
+        <input type="email" id="correo" placeholder="ejemplo@email.com" />
+        <br />
+        <label for="edad">Fecha de nacimiento</label>
+        <input type="date" id="edad" />
+        <br />
+        <label for="movie">¿Qué peli me sugieres proyectar?</label>
+        <input type="text" id="movie" />
+        <div class="formexample">
+          <button class="botones">Registrarse</button>
+          <button class="botones">Borrar</button>
+        </div>
+      </div>
+    </form>
+  </section>
+    
+
+<footer>
+    <h4>CINE CULTO (2024)</h4>
+    <p>Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
